@@ -1,7 +1,7 @@
-import * as React from "react";
-import { SCREEN_KEYS } from "../../util/constants";
-import { HomeScreen } from "../../screens";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import * as React from 'react';
+import { SCREEN_KEYS } from '../../util/constants';
+import { HomeScreen } from '../../screens';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const BottomTab = createBottomTabNavigator();
 
@@ -19,11 +19,10 @@ export default function BottomTabNavigator({ navigation, route }) {
 }
 
 function getHeaderTitle(route) {
-  const routeName =
-    route.state?.routes[route.state.index]?.name ?? SCREEN_KEYS.HOME;
+  const routeName = route.state?.routes[route.state.index]?.name ?? SCREEN_KEYS.HOME;
 
   switch (routeName) {
     case SCREEN_KEYS.HOME:
-      return "Home";
+      return 'Home';
   }
 }

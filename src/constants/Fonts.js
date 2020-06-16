@@ -1,7 +1,7 @@
 const type = {
-  regular: "Arial",
-  medium: "Arial",
-  bold: "Arial",
+  regular: 'Arial',
+  medium: 'Arial',
+  bold: 'Arial',
 };
 
 const size = {

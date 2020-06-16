@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import Context from "./Context";
-import { RootStackNavigator } from "./stacks";
+import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Context from './Context';
+import { RootStackNavigator } from './stacks';
 
 export default (props) => {
   const [isLogged, setIsLogged] = useState(props.isSignedIn);

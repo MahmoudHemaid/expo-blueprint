@@ -3,12 +3,12 @@
 // Redirects (300–399),
 // Client errors (400–499),
 // and Server errors (500–599).
-import { select } from "redux-saga/effects";
-import AppJson from "../../app.json";
+import { select } from 'redux-saga/effects';
+import AppJson from '../../app.json';
 
 export default function* (url, params, timeout = 8000) {
   const headers = {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
     X_APP_VERSION_X: AppJson.version,
   };
 
@@ -16,7 +16,7 @@ export default function* (url, params, timeout = 8000) {
 
   if (false) {
     let { token } = user;
-    headers.Authorization = "Bearer " + token;
+    headers.Authorization = 'Bearer ' + token;
   }
 
   // Merge headers from params if exist

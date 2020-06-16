@@ -1,7 +1,7 @@
-import React from "react";
-import { Text, ViewPropTypes, TouchableOpacity } from "react-native";
-import { Fonts, Colors } from "../constants";
-import PropTypes from "prop-types";
+import React from 'react';
+import { Text, ViewPropTypes, TouchableOpacity } from 'react-native';
+import { Fonts, Colors } from '../constants';
+import PropTypes from 'prop-types';
 
 const TextComponent = (props) => (
   <Text
@@ -9,7 +9,7 @@ const TextComponent = (props) => (
     style={[
       {
         fontFamily: props.bold ? Fonts.bold : Fonts.regular,
-        textAlign: props.center ? "center" : "auto",
+        textAlign: props.center ? 'center' : 'auto',
         fontSize: props.size,
         color: props.color,
       },
@@ -49,5 +49,5 @@ StyledText.defaultProps = {
   containerProps: {},
   touchable: false,
   containerStyle: {},
-  children: "",
+  children: '',
 };

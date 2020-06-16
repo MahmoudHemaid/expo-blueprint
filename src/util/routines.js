@@ -1,5 +1,5 @@
-import { createRoutine } from "redux-saga-routines";
+import { createRoutine } from 'redux-saga-routines';
 
-const signInRoutine = createRoutine("SIGN_IN");
+const signInRoutine = createRoutine('SIGN_IN');
 
 export { signInRoutine };

@@ -1,6 +1,6 @@
-import produce from "immer";
-import Immutable from "seamless-immutable";
-import { signInRoutine } from "../util/routines";
+import produce from 'immer';
+import Immutable from 'seamless-immutable';
+import { signInRoutine } from '../util/routines';
 
 const INITIAL_STATE = Immutable({
   error: null,

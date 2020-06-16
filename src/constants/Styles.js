@@ -1,9 +1,9 @@
-import Layout from "./Layout";
-import Colors from "./Colors";
+import Layout from './Layout';
+import Colors from './Colors';
 
 const shadow = {
   tiny: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 1,
@@ -13,7 +13,7 @@ const shadow = {
     elevation: 2,
   },
   small: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -23,7 +23,7 @@ const shadow = {
     elevation: 4,
   },
   medium: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 3,
@@ -33,7 +33,7 @@ const shadow = {
     elevation: 6,
   },
   normal: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 4,
@@ -43,7 +43,7 @@ const shadow = {
     elevation: 8,
   },
   large: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 5,
@@ -53,7 +53,7 @@ const shadow = {
     elevation: 10,
   },
   xLarge: {
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 6,

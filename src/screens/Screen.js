@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, View, ViewPropTypes } from "react-native";
-import { useSafeArea, SafeAreaView } from "react-native-safe-area-context";
-import { Colors } from "../constants";
-import PropTypes from "prop-types";
+import React from 'react';
+import { StyleSheet, View, ViewPropTypes } from 'react-native';
+import { useSafeArea, SafeAreaView } from 'react-native-safe-area-context';
+import { Colors } from '../constants';
+import PropTypes from 'prop-types';
 
 export default function Screen(props) {
   const insets = useSafeArea();

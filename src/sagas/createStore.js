@@ -1,15 +1,15 @@
-import { createStore, applyMiddleware, compose } from "redux";
-import { AsyncStorage } from "react-native";
-import createSagaMiddleware from "redux-saga";
-import { createLogger } from "redux-logger";
-import { persistStore, persistReducer } from "redux-persist";
-import { seamlessImmutableTransformCreator } from "redux-persist-seamless-immutable";
+import { createStore, applyMiddleware, compose } from 'redux';
+import { AsyncStorage } from 'react-native';
+import createSagaMiddleware from 'redux-saga';
+import { createLogger } from 'redux-logger';
+import { persistStore, persistReducer } from 'redux-persist';
+import { seamlessImmutableTransformCreator } from 'redux-persist-seamless-immutable';
 const transformerConfig = {
   whitelistPerReducer: {},
   blacklistPerReducer: {},
 };
 const persistConfig = {
-  key: "root",
+  key: 'root',
   storage: AsyncStorage,
   transforms: [seamlessImmutableTransformCreator(transformerConfig)],
 };

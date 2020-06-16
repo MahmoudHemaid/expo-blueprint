@@ -1,7 +1,7 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Layout, Styles, Fonts, Colors } from "../../constants";
-import PropTypes from "prop-types";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Layout, Styles, Fonts, Colors } from '../../constants';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {},

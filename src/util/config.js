@@ -1,8 +1,8 @@
 const dev = {
-  url: "",
+  url: '',
 };
 const prod = {
-  url: "",
+  url: '',
 };
 
 export const ApiUrl = __DEV__ ? dev.url : prod.url;

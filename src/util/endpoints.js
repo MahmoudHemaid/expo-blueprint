@@ -1,5 +1,5 @@
-import { ApiUrl } from "./config";
+import { ApiUrl } from './config';
 
 export const Api = {
-  SIGN_IN: ApiUrl + "/",
+  SIGN_IN: ApiUrl + '/',
 };
