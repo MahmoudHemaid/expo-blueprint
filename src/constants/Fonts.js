@@ -1,7 +1,8 @@
+import Layout from './Layout';
 const type = {
-  regular: 'Arial',
-  medium: 'Arial',
-  bold: 'Arial',
+  regular: Layout.isAndroid ? 'Roboto' : 'Arial',
+  medium: Layout.isAndroid ? 'Roboto' : 'Arial',
+  bold: Layout.isAndroid ? 'Roboto' : 'Arial',
 };
 
 const size = {
