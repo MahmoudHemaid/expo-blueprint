@@ -22,9 +22,13 @@
     "expo-constants": "~9.0.0",
     "expo-font": "~8.1.0",
     "expo-linking": "^1.0.1",
+    "expo-localization": "~8.1.0",
     "expo-splash-screen": "^0.2.3",
+    "expo-updates": "~0.2.1",
     "expo-web-browser": "~8.2.0",
+    "i18next": "^19.5.0",
     "immer": "^7.0.1",
+    "moment": "^2.27.0",
     "prop-types": "^15.7.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -43,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "babel-preset-expo": "~8.1.0",
     "jest-expo": "~37.0.0"
   },
