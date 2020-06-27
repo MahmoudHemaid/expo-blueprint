@@ -1,10 +1,11 @@
 import React from 'react';
-import { StatusBar, View } from 'react-native';
+import { View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AppNavigation from './AppNavigation';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import createStore from '../reducers';
+import { StatusBar } from 'expo-status-bar';
 
 const { store, persistor } = createStore();
 const AppContainer = (props) => {
