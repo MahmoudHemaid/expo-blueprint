@@ -1,7 +1,7 @@
-module.exports = function(api) {
+module.exports = function (api) {
   api.cache(true);
   return {
     presets: ['babel-preset-expo'],
-    plugins: ['@babel/plugin-syntax-dynamic-import']
+    plugins: ['jsx-control-statements', '@babel/plugin-syntax-dynamic-import']
   };
 };
