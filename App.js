@@ -1,12 +1,14 @@
 import 'react-native-gesture-handler';
+import './src/config/ReactotronConfig';
 import * as React from 'react';
+import Reactotron from 'reactotron-react-native';
 import useCachedResources from './src/hooks/useCachedResources';
 import AppContainer from './src/navigation/AppContainer';
 
 console.ignoredYellowBox = [];
 console.disableYellowBox = true;
 
-export default function App(props) {
+function App(props) {
   const isLoadingComplete = useCachedResources();
 
   if (!isLoadingComplete) {
@@ -15,3 +17,5 @@ export default function App(props) {
     return <AppContainer />;
   }
 }
+
+export default __DEV__ ? Reactotron.overlay(App) : App;
