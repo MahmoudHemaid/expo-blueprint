@@ -4,6 +4,8 @@ import createSagaMiddleware from 'redux-saga';
 import { createLogger } from 'redux-logger';
 import { persistStore, persistReducer } from 'redux-persist';
 import { seamlessImmutableTransformCreator } from 'redux-persist-seamless-immutable';
+import Reactotron from 'reactotron-react-native';
+
 const transformerConfig = {
   whitelistPerReducer: {},
   blacklistPerReducer: {},
@@ -22,7 +24,8 @@ export default (rootReducer, rootSaga) => {
 
   /* ------------- Saga Middleware ------------- */
 
-  const sagaMiddleware = createSagaMiddleware();
+  const sagaMonitor = __DEV__ ? Reactotron.createSagaMonitor() : null;
+  const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
   middleware.push(sagaMiddleware);
 
   /* ------------ Logger Middleware ------------- */
@@ -33,6 +36,9 @@ export default (rootReducer, rootSaga) => {
   /* ------------- Assemble Middleware ------------- */
 
   enhancers.push(applyMiddleware(...middleware));
+  if (__DEV__) {
+    enhancers.push(Reactotron.createEnhancer());
+  }
 
   const persistedReducer = persistReducer(persistConfig, rootReducer);
   const store = createStore(persistedReducer, compose(...enhancers));

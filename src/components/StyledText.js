@@ -21,11 +21,11 @@ export default function StyledText(props) {
   if (!props.touchable) {
     return <TextComponent {...props} />;
   }
-  const { containerProps, containerStyle } = props;
+  const { containerProps, containerStyle, onPress, ...rest } = props;
 
   return (
-    <TouchableOpacity {...containerProps} style={containerStyle}>
-      <TextComponent {...props} />
+    <TouchableOpacity {...containerProps} style={containerStyle} onPress={onPress}>
+      <TextComponent {...rest} />
     </TouchableOpacity>
   );
 }
@@ -38,7 +38,7 @@ StyledText.propTypes = {
   containerProps: PropTypes.object,
   touchable: PropTypes.oneOf([true, false, undefined]),
   containerStyle: ViewPropTypes.style,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };
 
 StyledText.defaultProps = {
